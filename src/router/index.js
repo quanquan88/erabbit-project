@@ -1,3 +1,10 @@
+/*
+ * @Author: quan
+ * @Date: 2022-05-19 22:11:16
+ * @LastEditors: quan
+ * @LastEditTime: 2022-05-19 22:40:23
+ * @Description: file content
+ */
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
@@ -21,6 +28,11 @@ const routes = [
         path: '/cate/sub/:id',
         name: 'subCate',
         component: () => import('@/views/cate/sub')
+      },
+      {
+        path: '/product/:id',
+        name: 'product',
+        component: () => import('@/views/goods')
       }
     ]
   },
